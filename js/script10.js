@@ -74,4 +74,4 @@ const calcu = (a, b) => {    // записывается когда код вн�
     return (a + b);
 };
 
-console.log(calcu(4, 4));
+console.log(calcu(4, 4)); 

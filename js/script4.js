@@ -12,11 +12,10 @@
 
 // console.log(typeof(answer)); // пример оператора typeof
 
-const answers = [];  // пример как с помощью команды prompt можно заполнять массив 
+const answers = []; // пример как с помощью команды prompt можно заполнять массив 
 
-answers [0] = prompt("Как ваше имя?", "");
-answers [1] = prompt("Как ваша фамилия?", "");
-answers [2] = prompt("Сколько вам лет?", "");
+answers[0] = prompt("Как ваше имя?", "");
+answers[1] = prompt("Как ваша фамилия?", "");
+answers[2] = prompt("Сколько вам лет?", "");
 
-document.write(answers); // эта команда выводим то что мы хотим на главный экран 
-
+document.write(answers); // эта команда выводим то что мы хотим на главный экран

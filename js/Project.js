@@ -3,24 +3,24 @@
 const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "");
 
 const personalMovieDB = {
-     count: numberOfFilms,
-     movies: {},
-     actors: {},
-     genres: [],
-     privat: false    
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
 
- if (personalMovieDB.count >=1 && personalMovieDB.count <= 10) {
-     console.log("Просмотренно довольно мало фильмов");
+if (personalMovieDB.count >= 1 && personalMovieDB.count <= 10) {
+    console.log("Просмотренно довольно мало фильмов");
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
-     console.log("Вы классический зритель");
+    console.log("Вы классический зритель");
 } else if (personalMovieDB.count > 30) {
-     console.log("Вы киноман");
+    console.log("Вы киноман");
 } else {
-     console.log("Произошла ошибка");
+    console.log("Произошла ошибка");
 }
 
-                                                  // Использование цикла for
+// Использование цикла for
 // for (let i = 0; i < 2; i++) {
 //      const  a = prompt("Один из последних просмотренных фильмов", ""),
 //             b = prompt("Насолько оцените его?", "");
@@ -35,7 +35,7 @@ const personalMovieDB = {
 // }
 
 // console.log(personalMovieDB);
-                                                  //Использование цикла do while
+//Использование цикла do while
 // let i = 0;
 // do {
 //      const  a = prompt("Один из последних просмотренных фильмов", ""),
@@ -44,17 +44,17 @@ const personalMovieDB = {
 //      if (a != '' && b != '' && a != null && b != null && a.length < 50) {
 //           personalMovieDB.movies[a] = b;
 //           console.log("done");
-          
+
 //      } else {
 //           console.log("Error");
 //           i--;
 //      }
-     
+
 // } 
 // while (i < 2); 
 
 // console.log(personalMovieDB);
-                                                  // Использование цикла while
+// Использование цикла while
 // let i = 0;
 // while (i < 2) {
 //      const  a = prompt("Один из последних просмотренных фильмов", ""),
