@@ -53,3 +53,17 @@ console.log(logg.substring(6, 11));
 // Пример метода substr()
 
 console.log(logg.substr(6, 5));
+
+// Есть мини библиотека в консоле браузера с методами при работе с числамию    Пример метода округления
+
+const num = 12.2;
+console.log(Math.round(num)); // в консоле будет 12
+
+// Пример метода parseInt - с его помощью можно менять тип данных со строк на чиловое значение 
+let test = "12.6 px";
+console.log(parseInt(test));
+
+// Пример метода pareFloat (одно действие с parseInt, только выводится дробное значение)
+
+let tst = "12.6 px";
+console.log(parseFloat(tst));
