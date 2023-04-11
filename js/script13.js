@@ -25,6 +25,41 @@ const options = {
 
 // Пример перебора свойств внутри объекта с помощью for in
 
-for (let key in options) {
-    console.log(`Свойство ${key} имеет значение ${options[key]}`);
-}
+// for (let key in options) {
+//     console.log(`Свойство ${key} имеет значение ${options[key]}`);
+// }
+
+// Пример если у нас внутри объекта есть объект. ЗАпускаем перебор внутри перебора
+
+// for (let key in options) {
+//     if (typeof(options[key]) === "object") {
+//         for (let i in options[key]) {
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//         }
+//     } else {
+//         console.log(`Свойство ${options} имеет значение ${options[key]}`);
+//     }
+// }
+
+// Пример как вывести сколько у нас пар (ключ: значение) в объекте
+
+// let counter = 0;
+
+// for (let key in options) {
+//     if (typeof(options[key]) === "object") {
+//         for (let i in options[key]) {
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//             counter++;
+//         }
+//     } else {
+//         console.log(`Свойство ${options} имеет значение ${options[key]}`);
+//         counter++;
+//     }
+// }
+// console.log(counter);
+
+// Конструкцию выше можно очень упростить через метод Object.keys()
+
+console.log(Object.keys(options)); // данная строка дала нам массив у которого можно узнать длину с помощью .length
+
+console.log(Object.keys(options).length); // выводит длину массива и соответственно кол-во свойств объекта
