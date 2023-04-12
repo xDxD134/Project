@@ -63,3 +63,31 @@ const options = {
 console.log(Object.keys(options)); // данная строка дала нам массив у которого можно узнать длину с помощью .length
 
 console.log(Object.keys(options).length); // выводит длину массива и соответственно кол-во свойств объекта
+
+//Пример создания метода вручную. Нужно поместить в объект ключ со значением function()
+// Для этого возьму массив выше и изменю название переменной, чтобы показать пример
+
+const opTions = {
+    name: "test",
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: "black",
+        bg: "red"
+    },
+    makeTest: function() {
+        console.log("Test");
+    }
+};
+
+opTions.makeTest();
+
+// Пример Деструктуризации объекта
+
+const { height, width } = opTions;
+console.log(width);
+console.log(height);
+
+const { border, bg } = opTions.colors;
+
+console.log(border);
