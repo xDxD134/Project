@@ -45,3 +45,35 @@ checkAge();
 //     return userAge >= 18 || confirm("Родители разрешают?");
 // }
 // checkAge();
+
+//  сложения числовых свойств объекта
+
+const salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+};
+let sum = 0;
+for (let key in salaries) {
+    sum += salaries[key];
+}
+console.log(sum);
+
+// умножение числовых свойств объекта
+const menu = {
+    width: 200,
+    heidth: 300,
+    title: "My menu"
+};
+
+
+function multiplyNumeric(menu) {
+
+    for (let key in menu) {
+        if (typeof(menu[key] === "number")) {
+            menu[key] *= 2;
+        }
+    }
+    console.log(menu);
+}
+multiplyNumeric(menu);
