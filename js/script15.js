@@ -45,3 +45,47 @@ objNew.age = 26;
 
 console.log(obj);
 console.log(objNew);
+
+// Создание копии массива (с помощью метода slice)
+
+const oldArray = ["a", "b", "c", "d", "e"]; // создаем массив
+
+const newArray = oldArray.slice(); // копируем массив при помощи метода slice
+
+console.log(oldArray);
+console.log(newArray);
+
+// Работа оператора Spread
+
+const video = ["youtube", "vimeo", "rutube"], // создали массив
+    blogs = ["wordpress", "livejournal", "blogger"], // создали второй массив
+    internet = [...video, ...blogs, "vk"]; //с помощью Spread развернули массивы и поместили данные в массив internet
+
+console.log(internet);
+
+// Работа Spread на примере посложнее
+
+function log(a, b, c) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+const num = [2, 5, 7];
+
+log(...num);
+
+// Четвертый способ создание копии для массива с помощью Spread
+
+const array = ["a", "b"];
+
+const newAaray = [...array]; // создали копию массива
+
+// Создании копии объекта с помощью Spread
+
+const q = {
+    one: 1,
+    two: 2
+};
+
+const newQ = {...q }; // создали компию объекта
