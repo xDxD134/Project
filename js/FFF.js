@@ -70,10 +70,40 @@ const menu = {
 function multiplyNumeric(menu) {
 
     for (let key in menu) {
-        if (typeof(menu[key] === "number")) {
+        if (typeof (menu[key] === "number")) {
             menu[key] *= 2;
         }
     }
     console.log(menu);
 }
 multiplyNumeric(menu);
+
+
+const video = {
+    width: 1024,
+    heidth: 520,
+    speed: 600,
+    quality: {
+        start: 5,
+        middle: 5,
+        end: 5
+    }
+};
+
+
+function obj() {
+    let counter = 0;
+    for (let key in video) {
+        if (typeof (video[key]) === "object") {
+            for (let i in video[key]) {
+                console.log(`${i} : ${video[key][i]}`);
+                counter++;
+            }
+        } else {
+            console.log(`${key} : ${video[key]}`);
+            counter++;
+        }
+    }
+    console.log(counter);
+}
+
