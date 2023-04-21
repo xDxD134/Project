@@ -107,3 +107,9 @@ function obj() {
     console.log(counter);
 }
 
+
+let i = () => {
+    console.log("FFF");
+};
+
+i();
