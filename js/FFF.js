@@ -34,7 +34,7 @@ function checkAge() {
     }
 }
 
-checkAge();
+// checkAge();
 
 
 
@@ -113,3 +113,12 @@ let i = () => {
 };
 
 i();
+
+
+const arr = [1, 13, 54, 2, 6, ],
+    sorted = arr.sort(compareNum);
+
+function compareNum(a, b) {
+    return a - b;
+}
+console.log(sorted);
