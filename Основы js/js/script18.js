@@ -20,7 +20,7 @@ console.log(btnsCopy[2]); // когда хотим использовать кн
 const circles = document.getElementsByClassName("circle");
 console.log(circles);
 
-// Первый овременный метод получения элемента со стр. Метод querySelectorAll()
+// Первый cовременный метод получения элемента со стр. Метод querySelectorAll()
 
 const hearts = document.querySelectorAll(".heart");
 
